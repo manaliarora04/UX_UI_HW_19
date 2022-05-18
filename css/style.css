@@ -34,9 +34,12 @@ h1 {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 25px 50px;
 }
 
+.intro {
+  margin-bottom: 2rem;
+}
 
 .navigation {
   margin: 15px;
@@ -91,7 +94,9 @@ footer {
   margin: 50px 0px;
 }
 
-
+.profile-img {
+  overflow: hidden;
+}
 
 .rights {
   height: 100%;
@@ -220,30 +225,28 @@ h4 {
   text-align: right;
 
 }
-
+.links ul {
+  padding: 10;
+  list-style-type: none;
+  justify-content: right;
+  flex: 5px;
+}
+.links li {
+  text-align: right;
+  margin-left: 2rem;
+}
+.links a {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
 @media only screen and (min-width: 600px) {
-  
-  
-  
   .links ul {
-    padding: 10;
-    list-style-type: none;
     display: flex;
-    justify-content: right;
-    flex: 5px;
   }
-  
   .links li {
     display: inline;
-    text-align: right;
-    margin-left: 2rem;
-  }
-  
-  .links a {
-    display: inline-block;
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -274,7 +277,6 @@ h4 {
   } */
 
   .hamburger {
-    display: none;
     height: 50px;
     width: 50px;
     display: block;
@@ -299,15 +301,16 @@ h4 {
     position: fixed;
     transform: translateY(-100%);
     transition: transform 0.2s;
-    top: 0;
-    left: 0;
+    top: -25px;
     right: 0;
     bottom: 0;
     z-index: 99;
     background: black;
     color: white;
     list-style: none;
-    padding-top: 4rem;
+    padding-top: 4.5rem;
+    width: fit-content;
+    padding-right: 3rem;
   }
 
   .showMenu {
