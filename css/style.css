@@ -241,6 +241,15 @@ h4 {
   text-decoration: none;
   color: white;
 }
+
+.menuItem {
+  border-bottom: 0.15rem solid transparent;
+}
+
+.menuItem:hover, .menuItem.active {
+  border-bottom: 0.15rem solid white;  
+}
+
 @media only screen and (min-width: 600px) {
   .links ul {
     display: flex;
@@ -316,4 +325,11 @@ h4 {
   .showMenu {
     transform: translateY(0);
   }
+  /*hover tabs */
+  /* .menuItem:hover {
+    background-color: azure;
+  }
+  .menuItem.active {
+    background-color: aliceblue;
+  } */
 }

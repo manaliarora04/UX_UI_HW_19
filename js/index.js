@@ -10,7 +10,6 @@ function imageUnhovered(imgObj) {
 }
 
 
-
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburgerIcon= document.querySelector(".hamburger");
@@ -18,6 +17,7 @@ const closeIcon= document.querySelector(".closeIcon");
 // const menuIcon = document.querySelector(".hamburger");
 
 function toggleMenu() {
+  debugger;
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
@@ -37,3 +37,4 @@ menuItems.forEach(
     menuItem.addEventListener("click", toggleMenu);
   }
 )
+
