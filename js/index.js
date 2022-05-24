@@ -17,7 +17,7 @@ const closeIcon= document.querySelector(".closeIcon");
 // const menuIcon = document.querySelector(".hamburger");
 
 function toggleMenu() {
-  debugger;
+  
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
@@ -32,9 +32,7 @@ function toggleMenu() {
 hamburgerIcon.addEventListener("click", toggleMenu);
 closeIcon.addEventListener("click", toggleMenu);
 
-menuItems.forEach( 
-  function(menuItem) { 
-    menuItem.addEventListener("click", toggleMenu);
-  }
-)
-
+// menuItems.forEach( 
+//   function(menuItem) { 
+//     menuItem.addEventListener("click", toggleMenu);
+  
